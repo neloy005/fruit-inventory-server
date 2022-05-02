@@ -31,6 +31,21 @@ async function run() {
             const fruit = await fruitCollection.findOne(query);
             res.send(fruit);
         })
+
+
+        app.put('/fruit/:id', async (req, res) => {
+            const id = req.params.id;
+            const updateQuantty = req.body;
+            const filter = { _id: ObjectId(id) };
+            const options = { upsert: true };
+            const updatedDoc = {
+                $set: {
+                    quantity: updateQuantty.quantity
+                }
+            };
+            const result = await fruitCollection.updateOne(filter, updatedDoc, options)
+            res.send(result);
+        })
     }
     finally {
 
