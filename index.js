@@ -52,6 +52,13 @@ async function run() {
             const query = { _id: ObjectId(id) };
             const result = await fruitCollection.deleteOne(query);
             res.send(result);
+        });
+
+        app.post('/fruitinfo', async (req, res) => {
+            const newFruit = req.body;
+            console.log('adding', newFruit);
+            const result = await fruitCollection.insertOne(newFruit);
+            res.send(result);
         })
     }
     finally {
