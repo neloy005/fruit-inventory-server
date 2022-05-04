@@ -59,7 +59,14 @@ async function run() {
             console.log('adding', newFruit);
             const result = await fruitCollection.insertOne(newFruit);
             res.send(result);
+        });
+        app.get('/item', async (req, res) => {
+            const query = {}
+            const cursor = fruitCollection.find(query);
+            const items = await cursor.toArray();
+            res.send(items);
         })
+
     }
     finally {
 
