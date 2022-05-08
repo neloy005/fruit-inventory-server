@@ -1,5 +1,7 @@
 # Fruits
-Link for my live site is [https://fruit-inventory.web.app/](https://fruit-inventory.web.app/)
+Link for my live site is [https://fruit-inventory.web.app/](https://fruit-inventory.web.app/) <br />
+Link for my Heroku server is [https://rocky-ravine-30128.herokuapp.com](https://rocky-ravine-30128.herokuapp.com) <br />
+BACKENT PRIVATE REPO LINK is [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-neloy005](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-neloy005)
 
 ## Description
 Fruits is an inventory website. Where it shows currently availablle fruits in the warehouse. The user can update the info of the warehouse by logging in the website. He/she can add new product, select delivered one even remove existing one. Its a fully responsive website with proper user authentication system implemented. 
