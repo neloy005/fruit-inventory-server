@@ -86,7 +86,6 @@ async function run() {
         app.put('/fruit/:id', async (req, res) => {
             const id = req.params.id;
             const updateQuantty = req.body;
-            console.log(updateQuantty);
             const filter = { _id: ObjectId(id) };
             const options = { upsert: true };
             const updatedDoc = {
