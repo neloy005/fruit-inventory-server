@@ -1,5 +1,5 @@
 # Fruits
-Link for my live site is [https://fruit-inventory.firebaseapp.com/](https://fruit-inventory.firebaseapp.com/)
+Link for my live site is [https://fruit-inventory.web.app/](https://fruit-inventory.web.app/)
 
 ## Description
 Fruits is an inventory website. Where it shows currently availablle fruits in the warehouse. The user can update the info of the warehouse by logging in the website. He/she can add new product, select delivered one even remove existing one. Its a fully responsive website with proper user authentication system implemented. 
